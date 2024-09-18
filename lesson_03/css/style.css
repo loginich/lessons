@@ -1,0 +1,52 @@
+
+/* Основні стилі */
+* {
+    color: green;
+}
+
+/* звернення до всіх h2 */
+h2 {
+    color: mediumvioletred;
+}
+
+/* звернення до всіх h2 за різними класами одночасно */
+.bay__title,
+.karolinobugaz__title,
+.ironport__title,
+.skadovsk__title,
+.koblevo__title {
+    color: brown;
+}
+
+/* звернення до koblevo__title який знаходиться в класі koblevo */
+.koblevo .koblevo__title {
+    color: orangered;
+}
+
+/* звернення до всіх p */
+p {
+    color: fuchsia;
+}
+
+/* звернення до всіх p в класі bay__info*/
+.bay__info>p {
+    color: royalblue;
+}
+
+/* звернення до всіх p які знаходяться далі по коду після img */
+img~p {
+    color: turquoise;
+}
+
+/* стилізація списків */
+.karolinobugaz__list * {
+    color: rgb(32, 218, 113);
+}
+
+ul>li {
+    color: mediumslateblue;
+}
+
+.bay__list li {
+    color: red;
+}
