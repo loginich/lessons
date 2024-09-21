@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson 4</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Как оформить текст: 11 главных CSS-свойств</h1>
+        <div class="header__text">У любого текстового элемента есть свои стили по умолчанию. Заголовки крупные и жирные,
+            текст в абзацах нормального размера и начертания, а ссылки обычно синие и подчёркнутые снизу.<br>
+            Каждый из этих элементов можно стилизовать по-своему, например, поменять размер, начертание или цвет.
+            Давайте посмотрим, как это сделать.
+        </div>
+        <nav class="header__nav">
+            <ol class="header__list">
+                <li class="header__item"><a class="header__link" href="#fontfamily">Сменить шрифт</a></li>
+                <li class="header__item"><a class="header__link" href="#color">Изменить цвет и размер текста</a>
+                <li class="header__item"><a class="header__link" href="#fontweight">Добавить жирность</a>
+                <li class="header__item"><a class="header__link" href="#fontstyle">Сделать текст курсивным</a>
+                <li class="header__item"><a class="header__link" href="#texttransform">Преобразовать текст</a>
+                <li class="header__item"><a class="header__link" href="#textdecoration">Добавить подчёркивание</a>
+                <li class="header__item"><a class="header__link" href="#textshadow">Создать тень</a>
+                <li class="header__item"><a class="header__link" href="#textalign">Выровнять текст</a>
+                <li class="header__item"><a class="header__link" href="#lineheight">Изменить высоту строки и
+                        межбуквенное расстояние</a>
+                <li class="header__item"><a class="header__link" href="#nuances">Нюансы</a>
+                <li class="header__item"><a class="header__link" href="#recommendations">Рекомендации</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <div class="font-change" id="fontfamily">
+            <h2 class="font-change__title">Сменить шрифт</h2>
+            <p class="font-change__text">Чтобы изменить шрифт элемента, используйте CSS-свойство font-family:</p>
+            <img src="img/5.jpg" alt="body {font-family: 'Roboto', Arial, sans-serif;}" class="font-change__images">
+            <p class="font-change__text">Первым указывается шрифт, который вы хотите добавить. После него через запятую
+                идут альтернативные шрифты. Например, если на компьютере у посетителя сайта не установлен шрифт Roboto,
+                браузер использует шрифт Arial.</p>
+        </div>
+        <div id="color" class="color-change">
+            <h2 class="color-change__title">Изменить цвет и размер текста</h2>
+            <p class="color-change__text">Цвет текста задаётся с помощью свойства color. Оно принимает значения в
+                различных форматах: можно написать название цвета (red, blue), шестнадцатеричное значение (#ff0000,
+                #00f) или функцию rgb(), чтобы задать цвет с помощью трёх чисел.</p>
+            <img src="img/4.jpg" alt="p {
+                color: red; /* Красный с помощью слов */
+                color: #ff0000; /* Красный с помощью HEX */
+                color: rgb(1.0,0.0,0.0); /* Красный с помощью rgb() */
+              }" class="color-change__images">
+            <p class="color-change__text">Размер текста меняется свойством font-size. Оно принимает значения в пикселях
+                (px), процентах (%) и других единицах измерения.</p>
+            <img src="img/3.jpg" alt="images" class="color-change__images">
+        </div>
+        <div id="fontweight" class="bold">
+            <h2 class="bold__title">Добавить жирность</h2>
+            <p class="bold__text">Свойство font-weight задаёт жирность текста. Оно принимает два вида значений. <br>
+
+                Численные: от 100 до 900. Например, 400 — обычный шрифт, а 700 — полужирный. <br>
+
+                Ключевые слова: normal — обычный шрифт, bold — полужирный, bolder — жирнее, чем текущий, lighter — менее
+                жирный шрифт по сравнению с текущим.</p>
+            <img src="img/2.jpg" alt="images" class="p {
+                font-weight: bold; /* Полужирный с помощью ключевого слова */
+                font-weight: 700; /* Полужирный с помощью численного значения */
+              }">
+        </div>
+        <div id="fontstyle" class="italic">
+            <h2 class="italic__title">Сделать текст курсивным</h2>
+            <p class="italic__text">Для этого есть свойство font-style. По умолчанию у него стоит значение normal, то
+                есть текст обычный, без курсива. Чтобы поменять начертание, используйте: <br>
+                italic — делает текст курсивным; <br>
+                oblique — делает текст наклонным.</p>
+            <img src="img/1.jpg" alt="images" class="p {
+                font-style: italic;
+              }">
+            <p class="italic__text"></p>
+        </div>
+        <div id="texttransform" class="convert">
+            <h2 class="convert__title">Преобразовать текст
+            </h2>
+            <p class="convert__text">Свойство text-transform меняет регистр текста. Оно принимает значения:</p>
+            <ul class="convert__list">
+                <li class="convert__item item-1">none — <span>без изменений, значение по умолчанию</span>;</li>
+                <li class="convert__item item-2">uppercase — <span>все буквы становятся прописными</span>;</li>
+                <li class="convert__item item-3">lowercase — <span>все буквы становятся строчными</span>;</li>
+                <li class="convert__item item-4">capitalize — <span>первая буква каждого слова находится в верхнем
+                        регистре</span>.</li>
+            </ul>
+            <img class="convert__images" src="img/6.jpg" alt="p {
+                text-transform: uppercase;
+              }">
+        </div>
+        <div id="textdecoration" class="decoration">
+            <h2 class="decoration__title">Добавить подчёркивание</h2>
+            <p class="decoration__text">Свойство text-decoration добавляет тексту декоративные эффекты:
+            </p>
+            <ul class="decoration__list">
+                <li class="decoration__item overline">overline <span>создаёт линию над текстом,</span></li>
+                <li class="decoration__item line-through">line-through <span>делает текст зачёркнутым,</span></li>
+                <li class="decoration__item underline">underline <span>добавляет подчёркивание.</span></li>
+                <li class="decoration__item dotted">dotted <span>добавляет многоточие под текстом.</span></li>
+                <li class="decoration__item wavy">wavy <span>добавляет волну под текстом.</span></li>
+            </ul>
+            <img class="decoration__images" src="img/7.jpg" alt="p {
+                text-decoration: overline;
+              }">
+            <p class="decoration__text">По умолчанию у свойства стоит значение none — без оформления.
+            </p>
+
+        </div>
+        <div id="textshadow" class="shadow">
+            <h2 class="shadow__title">Создать тень</h2>
+            <p class="shadow__text">Свойство text-shadowдобавляет тексту тень. Оно принимает значение в таком формате:
+            </p>
+            <img class="shadow__images" src="img/8.jpg" alt="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">
+        </div>
+        <div id="textalign" class="align">
+            <h2 class="align__title">Выровнять текст
+            </h2>
+            <p class="align__text">Свойство text-align выравнивает текст по горизонтали. Оно принимает значения:</p>
+            <ul class="align__list">
+                <li class="align__item right">right — вправо;</li>
+                <li class="align__item center">center — по центру;</li>
+                <li class="align__item justify">justify — выравнивание по ширине.</li>
+            </ul>
+        </div>
+        <div id="lineheight" class="line-change">
+            <h2 class="line-change__title">Изменить высоту строки и межбуквенное расстояние</h2>
+            <p class="line-change__text">Свойство line-height устанавливает высоту строки, указывая множитель
+                относительно размера шрифта. Свойство letter-spacing управляет расстоянием между символами.
+            </p>
+            <img class="line-change__images" src="img/9.jpg" alt="p {
+                line-height: 1.5;
+                letter-spacing: 2px;
+              }">
+        </div>
+        <div id="nuances" class="nuances">
+            <h2 class="nuances__title">Нюансы</h2>
+            <ul class="nuances__list">
+                <li class="nuances__item">У некоторых шрифтов нет жирного и курсивного варианта.
+                </li>
+                <li class="nuances__item">Свойство text-shadow делает текст эффектным, но слишком насыщенные тени могут
+                    усложнить чтение текста или создать плохой контраст.
+                </li>
+                <li class="nuances__item">Слишком большое или маленькое значение line-height и letter-spacing может
+                    нарушить интервалы между буквами и строками.
+                </li>
+                <li class="nuances__item">При изменении размера шрифта (font-size) следует учитывать, что очень мелкий и
+                    крупный текст может плохо отображаться или стать нечитабельным.
+                </li>
+            </ul>
+        </div>
+        <div id="recommendations" class="recommendations">
+            <h2 class="recommendations__title">Рекомендации</h2>
+            <ul class="recommendations__list">
+                <li class="recommendations__item"><span>Тестируйте вёрстку</span>. Проверяйте, как шрифты отображаются
+                    на разных
+                    устройствах и браузерах. Некоторые шрифты могут отображаться по-разному на разных платформах.
+                </li>
+                <li class="recommendations__item"><span>Используйте стили осторожно</span>. Смена регистра, курсив и
+                    жирный текст
+                    помогают выделить важный контент, расставляют акценты в тексте. Используйте их умеренно, потому что
+                    крупные фрагменты текста, написанного капсом или курсивом, лишь отвлекают пользователя. Акценты
+                    теряются, и текст выглядит неаккуратно.
+                </li>
+                <li class="recommendations__item"><span>Помните о доступности</span>. Используйте подходящие значения
+                    font-weight —
+                    слишком мелкий или крупный текст плохо читается. Подбирайте контрастные цвета для текстов..
+                </li>
+                <li class="recommendations__item"><span>Используйте несколько шрифтов</span>. Некоторые шрифты могут
+                    быть недоступны,
+                    поэтому важно указывать альтернативные варианты.
+                </li>
+                <li class="recommendations__item"><span>Соблюдайте авторское право</span>. У каждого шрифта есть
+                    лицензия, которая
+                    описывает, в каких случаях можно использовать шрифт, а в каких нельзя. Например, какие-то варианты
+                    нельзя использовать в коммерческих проектах, а какие-то предназначены только для веба или печати.
+                    Поэтому нужно внимательно читать лицензию перед загрузкой понравившегося шрифта — вдруг он не
+                    подходит под ваши цели.
+                </li>
+            </ul>
+        </div>
+        <div class="portfolio">
+            <h2 class="title">I am Professional User Experience Designer</h2>
+            <div class="text">
+                <p>I design and develop services for customers specializing creating stylish, modern websites, web
+                    services and online stores. My passion is to design digital user experiences.</p>
+                <p>I design and develop services for customers specializing creating stylish, modern websites, web
+                    services.</p>
+            </div>
+        </div>
+        <div class="landing">
+            <h2 class="landing__title">Introduce Your Product Quickly & Effectively</h2>
+            <div class="landing__text">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+                <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                    enim.</p>
+            </div>
+        </div>
+        <div class="busines">
+            <h2 class="busines__title">About us</h2>
+            <div class="busines__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit etiam nec suscipit dui sed cursus nibh id
+                    risus ultrices convallis phasellus vel tristique diam ham placerat aliquet libero a aliquam nisl
+                    accumsan eget etiam ultrices.</p>
+                <p>At sed pretium ac condimentum in non arcu venenatis ac nulla nullam cursus morbi eget magna donec
+                    lacus fames sed fames fames erat tincidunt tellus sed vitae venenatis pulvinar orci nunc eget mauris
+                    venenatis dis nonid nibh.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">«Доктайп» — журнал о фронтенде. Читайте, слушайте и учитесь с нами.</p>
+        <ul class="footer__list">
+            <li class="footer__item"><a href="#">Телеграм</a></li>
+            <li class="footer__item"><a href="#">Подкаст</a></li>
+            <li class="footer__item"><a href="#">Бесплатные учебники</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
