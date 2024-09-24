@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson 5</title>
+</head>
+
+<body>
+    <header class="header">
+        <ul class="header__list">
+            <li class="header__item"><a href="#padding">padding, margin и их свойства</a></li>
+            <li class="header__item"><a href="#width">Свойства width, height, overflow, vertical-align</a></li>
+            <li class="header__item"><a href="#darktheme">Верстка darktheme</a></li>
+            <li class="header__item"><a href="#landing">Верстка landing</a></li>
+            <li class="header__item"><a href="#design">Верстка design</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="indentation" id="padding">
+            <p class="lesson">Урок №5</p>
+            <h1 class="indentation__title title">padding, margin и их свойства</h1>
+            <p class="text">Свойство padding устанавливает внутренние отступы/поля со всех сторон элемента. Область
+                отступов
+                это пространство между содержанием элемента и его границей. Отрицательные значения не допускаются.</p>
+            <p class="text_2">Так же для свойства padding существует краткая форма записи свойств, чтобы не писать
+                отдельное
+                правило для каждой стороны (<mark>padding-top</mark>, <mark>padding-right</mark>,
+                <mark>padding-bottom</mark>,
+                <mark>padding-left</mark>).
+            </p>
+
+            <p class="item_1">Одинаковаый отступ со всех сторон 20px</p>
+            <p class="item_2">Здесь padding будет сверху 10px, справа 20px, снизу 25px, слевава 35px
+            </p>
+            <p class="item_3">сверху 10px снизу 15px справа 12px слева 20px
+            </p>
+            <p class="item_4">сверху/снизу 10px справа/слева 5px
+            </p>
+            <p class="text_2">Свойство margin - Наружный отступ. Используется для отступов между блоками (элементами),
+                рекомендуется делать отступы сверху вниз (margin-bottom) слева направо. Значения могут быть
+                отрицательными! Кроме универсальной записи для свойства margin существует краткая форма записи свойств,
+                чтобы не писать
+                отдельное правило для каждой стороны (<mark>margin-top</mark>, <mark>margin-right</mark>,
+                <mark>margin-bottom</mark>, <mark>margin-left</mark>) НЕ наследуется
+            </p>
+
+            <div class="margin">
+                <div class="mar-in__items ">
+                    <div class="item">
+                        <div class="content content-1">margin: 10px;</div>
+                    </div>
+                    <div class="item">
+                        <div class="content content-2">margin: 10px 5px;</div>
+                    </div>
+                    <div class="item">
+                        <div class="content content-3">margin: 10px 15px 5px;</div>
+                    </div>
+                    <div class="item">
+                        <div class="content content-4">margin-left: -30px;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blocksize" id="width">
+            <h2 class="blocksize__title title">Свойства width, height, overflow, vertical-align</h2>
+            <p class="blocksize__text text_2">Свойство width отвечает за ширину элемента. С его помощью мы можем
+                увеличивать или
+                уменьшать ширину
+                строчно-блочных (inline-block) и блочных (block) элементов. На строчные элементы это свойство не будет
+                иметь никакого влияния. Для фиксированной ширины пишем свойство width. Для минимальной ширины —
+                min-width. Для максимальной ширины — max-width. Эти три свойства можно указывать по отдельности, а также
+                комбинировать для достижения нужного результата.</p>
+            <div class="widths-box">
+                <div class="widths-box__item width">
+                    <p>Ширина всегда (width) = 150px
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus quia blanditiis
+                        nulla delectus inventore laudantium enim maxime.
+                    </p>
+                </div>
+                <div class="widths-box__item max-width">
+                    <p>Максимально возможная ширина (max-width) = 150px
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam, dolore consequuntur eius
+                        tempora voluptas minus voluptate, vel iure, illo vero commodi voluptatibus voluptates.
+                        Laudantium error molestiae itaque deserunt impedit.
+                    </p>
+                </div>
+                <div class="widths-box__item min-width">
+                    <p>min-width занимает всю доступную ширину родителя но не будет меньше 150px
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure sit, earum adipisci
+                        praesentium sunt ipsa magni fugiat ducimus, qui dolore soluta explicabo a ad optio nostrum
+                        dolores tenetur, officia eaque at maxime dolorem autem eveniet consequuntur! Aut consequatur
+                        quod molestiae molestias architecto odio, doloremque alias deserunt aliquam. Iste nihil dicta
+                        numquam quisquam, quibusdam inventore debitis, dolores velit odit aut porro ad ipsa beatae
+                        blanditiis laboriosam voluptatum minus saepe itaque, neque quasi! Neque voluptate tempore, velit
+                        cumque corporis quis reiciendis nesciunt, accusantium facilis laudantium blanditiis consequatur
+                        aspernatur, dignissimos suscipit illum dolores eaque! Voluptatibus alias, dolores mollitia
+                        recusandae nesciunt voluptatem similique nisi temporibus, aperiam nulla architecto nihil
+                        deserunt veritatis magnam, quibusdam cum aut molestiae. Magnam alias, officiis commodi quod
+                        voluptatem incidunt dicta animi voluptas ipsa excepturi? Odit ipsa labore ut qui eum sequi
+                        quibusdam ex quisquam expedita provident ratione veniam commodi dolorem possimus quod sapiente
+                        dolorum ipsam, accusamus minus tempora. Omnis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="darktheme" id="darktheme">
+            <h2 class="darktheme__title">We Provide you streaming experience across various devices.</h2>
+            <div class="darktheme__text">With StreamVibe, you can enjoy your favorite movies and TV shows anytime,
+                anywhere.
+                Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a
+                moment of entertainment.</div>
+            <div class="darktheme__items">
+                <div class="darktheme__item">
+                    <div class="box">
+                        <div class="wrap">
+                            <img class="image" src="img/1.png" alt="Image smartphones">
+                            <div class="subtitle">Smartphones</div>
+                        </div>
+                        <p class="subtext">StreamVibe is optimized for both Android and iOS smartphones.
+                            Download our app from the Google Play Store or the Apple App Store</p>
+                    </div>
+                </div>
+                <div class="darktheme__item">
+                    <div class="box">
+                        <div class="wrap">
+                            <img class="image" src="img/2.png" alt="Image tablet">
+                            <div class="subtitle">Tablet</div>
+                        </div>
+                        <p class="subtext">StreamVibe is optimized for both Android and iOS smartphones. Download our
+                            app
+                            from the Google Play Store or the Apple App Store</p>
+                    </div>
+                </div>
+                <div class="darktheme__item">
+                    <div class="box">
+                        <div class="wrap">
+                            <img class="image" src="img/3.png" alt="Image smart TV">
+                            <div class="subtitle">Smart TV</div>
+                        </div>
+                        <p class="subtext">StreamVibe is optimized for both Android and iOS smartphones. Download our
+                            app
+                            from the Google Play Store or the Apple App Store</p>
+                    </div>
+                </div>
+                <div class="darktheme__item">
+                    <div class="box">
+                        <div class="wrap">
+                            <img class="image" src="img/4.png" alt="Image laptops">
+                            <div class="subtitle">Laptops</div>
+                        </div>
+                        <p class="subtext">StreamVibe is optimized for both Android and iOS smartphones. Download our
+                            app
+                            from the Google Play Store or the Apple App Store</p>
+                    </div>
+                </div>
+                <div class="darktheme__item">
+                    <div class="box">
+                        <div class="wrap">
+                            <img class="image" src="img/5.png" alt="Image gaming console">
+                            <div class="subtitle">Gaming Consoles</div>
+                        </div>
+                        <p class="subtext">StreamVibe is optimized for both Android and iOS smartphones. Download our
+                            app
+                            from the Google Play Store or the Apple App Store</p>
+                    </div>
+                </div>
+                <div class="darktheme__item">
+                    <div class="box">
+                        <div class="wrap">
+                            <img class="image" src="img/6.png" alt="Image VR headsets">
+                            <div class="subtitle">VR Headsets</div>
+                        </div>
+                        <p class="subtext">StreamVibe is optimized for both Android and iOS smartphones. Download our
+                            app
+                            from the Google Play Store or the Apple App Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="landing" id="landing">
+            <h2 class="landing__title">Introduce Your Product Quickly & Effectively</h2>
+            <div class="landing__text">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                </p>
+                <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    quis enim.</p>
+            </div>
+            <div class="landing__buttons">
+                <a href="#" class="landing__link-l">Purchase UI Kit</a>
+                <a href="#" class="landing__link-r">Learn More</a>
+            </div>
+        </div>
+        <div class="design" id="design">
+            <h2 class="design__title">Design & Build Your Own Landing Pages</h2>
+            <div class="design__text">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+                <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    quis
+                    enim</p>
+            </div>
+            <div class="design__items">
+                <div class="design__item">
+                    <div class="design__box">
+                        <img src="img/1.svg" alt="images" class="design__images">
+                        <div class="design__subtitle">Title Goes Here</div>
+                        <div class="design__subtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean
+                            commodo ligula eget dolor. </div>
+                    </div>
+
+                </div>
+                <div class="design__item">
+                    <div class="design__box">
+                        <img src="img/1.svg" alt="images" class="design__images">
+                        <div class="design__subtitle">Title Goes Here</div>
+                        <div class="design__subtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean
+                            commodo ligula eget dolor. </div>
+                    </div>
+
+                </div>
+                <div class="design__item">
+                    <div class="design__box">
+                        <img src="img/1.svg" alt="images" class="design__images">
+                        <div class="design__subtitle">Title Goes Here</div>
+                        <div class="design__subtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean
+                            commodo ligula eget dolor. </div>
+                    </div>
+
+                </div>
+                <div class="design__item">
+                    <div class="design__box">
+                        <img src="img/1.svg" alt="images" class="design__images">
+                        <div class="design__subtitle">Title Goes Here</div>
+                        <div class="design__subtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean
+                            commodo ligula eget dolor. </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer__list">
+            <li class="footer__item"><a href="#padding">padding, margin и их свойства</a></li>
+            <li class="footer__item"><a href="#width">Свойства width, height, overflow, vertical-align</a></li>
+            <li class="footer__item"><a href="#darktheme">Верстка darktheme</a></li>
+            <li class="footer__item"><a href="#landing">Верстка landing</a></li>
+            <li class="footer__item"><a href="#design">Верстка design</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
