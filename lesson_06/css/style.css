@@ -1,0 +1,383 @@
+/* Подключение шрифтов  */
+/* Google fonts (plugin) */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+/* сброс стилей */
+@import url("reset.css");
+
+/* Основные стили */
+body {
+    font-family: Roboto;
+    font-size: 18px;
+
+    background: url("../img/1.jpg") repeat 0 0 / 500px;
+
+}
+
+wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+mark {
+    background-color: rgb(209, 208, 208);
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*  */
+.header,
+.main,
+{
+margin-bottom: 40px;
+}
+
+    {
+    margin-bottom: 40px;
+}
+
+
+.header__title {
+    font-size: 45px;
+    font-weight: 700;
+    background-color: khaki;
+    margin-bottom: 20px;
+}
+
+.header__text {
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+
+
+
+.header__item {
+    color: blue;
+    margin-bottom: 15px;
+}
+
+.header__item a {
+    text-decoration: overline;
+
+}
+
+/*  */
+.about-border {
+    margin-bottom: 40px;
+}
+
+.main__text {
+    margin-bottom: 20px;
+
+}
+
+
+.main__item {
+    margin-bottom: 15px;
+    border: 2px solid #000;
+
+}
+
+.top {
+    border-top: 4px dashed #f00;
+}
+
+/*  */
+.about-outline {
+    margin-bottom: 40px;
+}
+
+.outline {}
+
+
+.outline__text {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.main__code {
+    display: inline-block;
+    padding-block: 5px;
+    background-color: black;
+    color: rgb(23, 221, 23);
+    border: 3px solid red;
+    margin-bottom: 10px;
+}
+
+.outline__list {
+    outline: 3px dotted #00f;
+}
+
+.outline__list>li {
+    margin-bottom: 15px;
+}
+
+/*  */
+
+.about-radius {
+    margin-bottom: 40px;
+}
+
+.radius__text {
+    line-height: 1.5;
+}
+
+.radius__code {
+    display: inline-block;
+    padding-block: 5px;
+    margin-bottom: 25px;
+    background-color: black;
+    color: rgb(23, 221, 23);
+    border: 3px solid red;
+    margin-bottom: 10px;
+}
+
+.radius__blok {
+    width: 150px;
+    height: 150px;
+    background-color: palegoldenrod;
+    border-radius: 50%;
+}
+
+.about__shadow {
+    margin-bottom: 40px;
+}
+
+.shadow__title {
+    display: inline-block;
+    box-shadow: 15px 10px 10px 10px rgba(239, 6, 247, 0.3);
+}
+
+.shadow__text {
+    line-height: 1.5;
+}
+
+.shadow__list {
+    line-height: 1.5;
+}
+
+.shadow__list>li {
+    margin-bottom: 15px;
+}
+
+.shadow__code {
+    display: inline-block;
+    padding-block: 5px;
+    margin-bottom: 25px;
+    background-color: black;
+    color: rgb(23, 221, 23);
+    border: 3px solid red;
+    margin-bottom: 10px;
+}
+
+/*  */
+
+.about__opacity {
+    margin-bottom: 40px;
+}
+
+
+.opacity__title {
+    opacity: 0.3
+}
+
+.opacity__text {
+    line-height: 1.5;
+}
+
+.opacity__code {
+    display: inline-block;
+    padding-block: 5px;
+    margin-bottom: 25px;
+    background-color: black;
+    color: rgb(23, 221, 23);
+    border: 3px solid red;
+}
+
+/*  */
+
+.about__visibility {
+    margin-bottom: 40px;
+}
+
+.visibility__text {
+    line-height: 1.5;
+}
+
+.visibility__code {
+    display: inline-block;
+    padding-block: 5px;
+    margin-bottom: 25px;
+    background-color: black;
+    color: rgb(23, 221, 23);
+    border: 3px solid red;
+    margin-bottom: 10px;
+}
+
+/*  */
+
+.background {
+    margin-bottom: 40px;
+}
+
+
+.background__code {
+    display: inline-block;
+    padding-block: 5px;
+    margin-bottom: 25px;
+    background-color: black;
+    color: rgb(23, 221, 23);
+    border: 3px solid red;
+    margin-bottom: 10px;
+}
+
+/*  */
+.portfolio {
+    margin-bottom: 40px;
+    background: #FDF0E9;
+}
+
+.portfolio .container {
+    max-width: 1200px;
+}
+
+.portfolio__box {
+    font-size: 0;
+}
+
+.content {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+
+.portfolio__left {
+    font-family: Epilogue;
+    width: 48%;
+    padding-right: 171px;
+}
+
+.portfolio__subtext {
+    color: #EF6D58;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.portfolio__title {
+    color: #391400;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.portfolio__text {
+    color: #391400;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 26px;
+}
+
+.portfolio__item {
+    background: url('../img/3.svg') 0 0 / 32px no-repeat;
+    margin-bottom: 16px;
+    padding-left: 42px;
+    line-height: 32px;
+}
+
+.portfolio__right {
+    width: 50%;
+}
+
+
+/*  */
+
+.footer__text {
+    font-size: 25px;
+    font-style: italic;
+    line-height: 1.5;
+    text-shadow: 8px -5px 5px #838383;
+}
+
+/*  */
+.darktheme {
+    font-family: Manrope;
+
+    background: #1E1E1E;
+}
+
+.darktheme__top {
+    background: url("../img/vector.png") center / 470px no-repeat, linear-gradient(to bottom, rgba(20, 20, 20, 0) 20%, #141414 100%) center / cover no-repeat,
+        linear-gradient(to top, rgba(20, 20, 20, 0) 20%, #141414 100%) center / cover no-repeat,
+        url('../img/background.png') center / cover no-repeat;
+    min-height: 860px;
+}
+
+.darktheme__container {
+    max-width: 1096px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -65px;
+    text-align: center;
+}
+
+.darktheme__bottom-box {
+    padding-bottom: 20px;
+}
+
+.darktheme__info {
+    margin-bottom: 50px;
+
+}
+
+.darktheme__title {
+    color: #FFF;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.darktheme__text {
+    color: #999;
+    line-height: 1.5;
+}
+
+.darktheme__button {
+    min-width: 251px;
+    border-radius: 8px;
+    padding: 18px 24px;
+    background: #E50000;
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.darktheme__button span {
+    background: url('../img/button.png') 0 0 / 28px no-repeat;
+    padding-left: 32px;
+}

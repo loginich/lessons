@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson 6</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">CSS-свойства: Border, Outline, Border-Radius, Box-Shadow, Opacity, Visibility
+                и Background</h1>
+            <div class="header__text">
+                CSS-свойства: Border, Outline, Border-Radius, Box-Shadow, Opacity, Visibility и Background
+                CSS — это основа для оформления внешнего вида веб-страниц. Различные свойства позволяют задавать
+                стили для элементов, такие как рамки, тени, прозрачность и фон. В этой статье разберем несколько
+                ключевых CSS-свойств, таких как <mark>border</mark>, <mark>outline</mark>,
+                <mark>border-radius</mark>, <mark>box-shadow</mark>, <mark>opacity</mark>, <mark>visibility</mark> и
+                <mark>background</mark>, и рассмотрим, как они применяются на практике.
+            </div>
+            <div class="container">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#border">1. Border (Граница)</a></li>
+                    <li class="header__item"><a href="#outline">2. Outline (Контур)</a></li>
+                    <li class="header__item"><a href="#radius">3. Border-radius (Скругление углов)</a></li>
+                    <li class="header__item"><a href="#shadow">4. Box-shadow (Тень блока)</a></li>
+                    <li class="header__item"><a href="#opacity">5. Opacity (Прозрачность)</a></li>
+                    <li class="header__item"><a href="#visibility">6. Visibility (Видимость)</a></li>
+                    <li class="header__item"><a href="#background">7. Background (Фон)</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <div class="about-border">
+                <div class="container">
+                    <h2 class="main__title">1. Border (Граница)</h2>
+                    <div class="main__text">Свойство border задает рамку вокруг элемента. <p>Синтаксис:</p>
+                    </div>
+                    <div class="main__code"><code>border: 2px solid #000;</code></div>
+                    <ul class="main__list">
+                        <li class="main__item top">Ширина: 2px — толщина границы;</li>
+                        <li class="main__item">Стиль: solid — тип границы, который может быть solid (сплошная), dashed
+                            (пунктирная), dotted (точечная) и др.</li>
+                        <li class="main__item">Цвет: #000 — цвет границы в формате HEX (чёрный).</li>
+                    </ul>
+                    <div class="main__text">Можно также задавать границы по сторонам отдельно: <mark>border-top</mark>,
+                        <mark>border-right</mark>,
+                        <mark>border-bottom</mark>, <mark>border-left</mark>. <p> Пример: </p>
+                    </div>
+                    <div class="main__code dashed"><code>border-top: 4px dashed #f00;</code></div>
+                </div>
+            </div>
+            <div class="about-outline outline">
+                <div class="container">
+                    <h2 class="outline__title">2. Outline (Контур)</h2>
+                    <div class="outline__text">Свойство <mark>outline</mark> похоже на <mark>border</mark>, но оно не
+                        влияет на размер и положение элемента, так как размещается поверх рамки и не влияет на размеры.
+                        <p>Синтаксис:</p>
+                        <div class="main__code"><code>outline: 3px dotted #00f;</code></div>
+                    </div>
+                    <ul class="outline__list">
+                        <li class="outline__item">Ширина: 3px — толщина контура;</li>
+                        <li class="outline__item">Стиль: dotted — тип линии (в данном случае точечный);</li>
+                        <li class="outline__item">Цвет: #00f — синий цвет.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-radius radius">
+                <div class="container">
+                    <h2 class="radius__title">3. Border-radius (Скругление углов)</h2>
+                    <div class="radius__text">Свойство border-radius позволяет скруглить углы элемента, создавая эффект
+                        закруглённой рамки.
+                        <p>Синтаксис:</p>
+                    </div>
+                    <div class="radius__code"><code>border-radius: 10px;</code></div>
+                    <ul class="radius__list">
+                        <li class="radius__item">Радиус: 10px — радиус скругления углов.</li>
+                    </ul>
+                    <div class="radius__text">С помощью этого свойства можно создавать как симметричные, так и
+                        асимметричные углы, задавая отдельные значения для каждой стороны
+                        (например,<mark>border-radius:
+                            10px 20px 30px 40px</mark>;).
+                        <p>Пример:</p>
+                    </div>
+
+                    <div class="radius__code"><code>border-radius: 50%;</code></div>
+                    <div class="radius__text">Этот код создаёт круг, если элемент имеет одинаковую ширину и высоту.
+                    </div>
+                    <div class="radius__blok"></div>
+                </div>
+            </div>
+            <div class="about__shadow shadow">
+                <div class="container">
+                    <h2 class="shadow__title">4. Box-shadow (Тень блока)</h2>
+                    <div class="shadow__text">Свойство box-shadow задает тень для элемента. <p>Синтаксис:</p>
+                    </div>
+                    <div class="shadow__code"><code>box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);</code></div>
+                    <ul class="shadow__list">
+                        <li class="shadow__item">Горизонтальное смещение: 5px — смещение тени по горизонтали;</li>
+                        <li class="shadow__item">Вертикальное смещение: 5px — смещение тени по вертикали;</li>
+                        <li class="shadow__item">Размытие: 15px — радиус размытия тени;</li>
+                        <li class="shadow__item">Цвет тени: rgba(0, 0, 0, 0.3) — цвет тени с прозрачностью 30%.</li>
+                    </ul>
+                    <div class="shadow__code">Пример:<code>box-shadow: 0 0 10px #00f;</code></div>
+                </div>
+            </div>
+            <div class="about__opacity opacity">
+                <div class="container">
+                    <h2 class="opacity__title">5. Opacity (Прозрачность)</h2>
+                    <div class="opacity__text">Свойство <mark>opacity</mark> задает степень прозрачности элемента.
+                        <p>Синтаксис:</p>
+                    </div>
+                    <div class="opacity__code"><code>opacity: 0.8;
+                        </code></div>
+                    <div class="opacity__text">Значение opacity задается числом от 0 до 1, где 0 — полная прозрачность
+                        (невидимый элемент), а 1 — полное отсутствие прозрачности (непрозрачный элемент). <p>Пример:</p>
+                    </div>
+                    <div class="opacity__code"><code>opacity: 0.5;</code></div>
+                    <div class="opacity__text">Этот код сделает элемент полупрозрачным.</div>
+                </div>
+            </div>
+            <div class="about__visibility visibility">
+                <div class="container">
+                    <h2 class="visibility__title">6. Visibility (Видимость)</h2>
+                    <div class="visibility__text">Свойство <mark>visibility</mark> управляет видимостью элемента.
+                        <p>Синтаксис:</p>
+                    </div>
+                    <div class="visibility__code"><code>visibility: hidden;</code></div>
+                    <div class="visibility__text">Значение <mark>hidden</mark> делает элемент невидимым, но сохраняет
+                        его место в документе. В отличие от свойства <mark>display: none</mark>, которое полностью
+                        убирает элемент с
+                        страницы, <mark>visibility: hidden</mark> просто скрывает его. Пример:
+                    </div>
+                    <div class="visibility__code"><code>visibility: visible;</code></div>
+                    <div class="visibility__text">Элемент будет видимым.</div>
+                </div>
+            </div>
+            <div class="about__background background">
+                <div class="container">
+                    <h2 class="background__title">7. Background (Фон)</h2>
+                    <div class="background__text">Свойство background задает фон элемента. Оно поддерживает множество
+                        значений: цвет, изображения, градиенты и другие.</div>
+                    <div class="background__code"><code>background: #f0f0f0;</code></div>
+                    <div class="background__text">
+                        <p>Цвет фона: #f0f0f0 — светло-серый цвет.</p>
+                        <p>Можно использовать изображение как фон:</p>
+                    </div>
+                    <div class="background__code"><code>background: url('image.jpg') no-repeat center/cover;</code>
+                    </div>
+                    <ul class="background__list">
+                        <li class="background__item">Изображение: url('image.jpg') — ссылка на картинку;</li>
+                        <li class="background__item">Повтор: no-repeat — изображение не повторяется;</li>
+                        <li class="background__item">Позиция: center — изображение центрируется;</li>
+                        <li class="background__item">Размер: cover — изображение масштабируется по размеру блока.</li>
+                    </ul>
+                    <div class="background__code"><code>background: linear-gradient(to right, red, yellow);</code></div>
+                    <div class="background__text">Этот код создаёт градиент от красного к жёлтому слева направо.
+                    </div>
+                </div>
+            </div>
+            <section class="portfolio">
+                <div class="container">
+                    <div class="portfolio__box">
+                        <div class="portfolio__left content">
+                            <div class="portfolio__subtext">Features</div>
+                            <h2 class="portfolio__title">Give Your Site
+                                A New Look</h2>
+                            <div class="portfolio__text">Service range including technical skills, design, business
+                                understanding.</div>
+                            <ul class="portfolio__list">
+                                <li class="portfolio__item"><span>Range including technical skills</span></li>
+                                <li class="portfolio__item"><span>Business understanding</span></li>
+                                <li class="portfolio__item"><span>Partner on the long run</span></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio__right content">
+                            <img src="img/2.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="darktheme">
+                <div class="darktheme__top"></div>
+                <div class="darktheme__container">
+                    <div class="darktheme__bottom-box">
+                        <div class="darktheme__info">
+                            <div class="darktheme__title">The Best Streaming Experience</div>
+                            <div class="darktheme__text">StreamVibe is the best streaming experience for watching your
+                                favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a
+                                wide variety of content, including the latest blockbusters, classic movies, popular TV
+                                shows, and more. You can also create your own watchlists, so you can easily find the
+                                content you want to watch.</div>
+                        </div>
+                        <a href="#" class="darktheme__button"><span>Start Watching Now</span></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__text">
+                <p>Заключение:</p>
+                <p>
+                    Эти CSS-свойства позволяют контролировать внешний вид элементов на
+                    веб-странице.
+                </p>
+                Свойства <mark>border</mark> и <mark>outline</mark> создают рамки вокруг элементов,
+                <mark>border-radius</mark> добавляет скруглённые углы,
+                <mark>box-shadow</mark> позволяет создавать тени, а <mark>opacity</mark> и <mark>visibility</mark>
+                управляют прозрачностью и видимостью.
+                Свойство <mark>background</mark> задаёт фон элемента, будь то цвет, изображение или градиент.
+                Используя
+                эти свойства
+                вместе, можно создавать элегантные и визуально привлекательные веб-интерфейсы.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
