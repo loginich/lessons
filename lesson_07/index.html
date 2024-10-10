@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson 7</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header-page header">
+            <section class="header">
+                <div class="header__container container">
+                    <h1 class="header__title" id="comeback">События при наведении. :hover, :focus, :active в CSS</h1>
+                    <div class="header__text">
+                        <p>
+                            CSS-псевдоклассы :hover, :focus и :active задают элементам состояния, которые
+                            реализуются при определённых действиях пользователя. Состояния меняют цвет или размер
+                            элемента,
+                            добавляют ему рамку, делают более интерактивным, выделяют и указывают на его назначение.
+                        </p>
+                        <p>
+                            В статье рассмотрим, в чём различия состояний, какие элементы важно выделять и как это
+                            влияет на
+                            доступность сайта.
+                        </p>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#hover">:hover</a></li>
+                        <li class="header__item"><a href="#focus">:focus</a></li>
+                        <li class="header__item"><a href="#active">:active</a></li>
+                        <li class="header__item"><a href="#homework-1">homework 1</a></li>
+                        <li class="header__item"><a href="#homework-2">homework 2</a></li>
+                        <li class="header__item"><a href="#homework-3">homework 3</a></li>
+                    </ul>
+
+                </div>
+            </section>
+        </header>
+        <main class="page">
+            <section class="page__hover hover" id="hover">
+                <div class="hover__container container">
+                    <div class="hover__text">
+                        <h2 class="hover__title">
+                            :hover
+                        </h2>
+                        <p>Состояние :hover срабатывает, когда пользователь наводит курсор на элемент. Часто
+                            используется
+                            для создания эффекта взаимодействия с элементом, например, при наведении на ссылку меняется
+                            цвет
+                            текста. Это даёт пользователю понять, что на элемент можно нажать и получить определённый
+                            результат.
+                        </p>
+                    </div>
+                    <ul class="hover__list">
+                        <li class="hover__item hover-1">hover 1</li>
+                        <li class="hover__item hover-2">hover 2</li>
+                        <li class="hover__item hover-3">hover 3</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="page__focus focus" id="focus">
+                <div class="page__focus container">
+                    <div class="focus__text">
+                        <h2 class="focus__title">:focus </h2>
+                        <p> Состояние :focus срабатывает при клике на элемент или переходе на него с клавиатуры при
+                            помощи клавиши tab. Применяется состояния ко всем интерактивным элементам —
+                            <mark>button</mark>, <mark>a</mark>,
+                            <mark>input</mark>, <mark>select</mark> и элементам с <mark>tabindex</mark>.
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, enim?
+
+                        </p>
+                        <p>
+                            Существует также состояние :focus-visible, которое возникает исключительно при
+                            фокусе с клавиатуры. Это состояние улучшает доступность сайта для пользователей
+                            с ограниченными возможностями. Если человек перемещается по интерфейсу с помощью
+                            клавиатуры, ему важно понимать, где он находится. Поэтому состояние фокуса
+                            рекомендуется делать как можно более заметным.
+                        </p>
+                        <div class="focus__btn-box">
+                            <button class="focus__button btn-1">focus 1</button>
+                            <button class="focus__button btn-2">focus 2</button>
+                            <button class="focus__button btn-3">focus 3</button>
+                        </div>
+                    </div>
+            </section>
+            <section class="page__active active" id="active">
+                <div class="active__container container">
+                    <div class="active__text">
+                        <h2 class="active__title">:active</h2>
+                        <p>
+                            Состояние :active срабатывает, когда пользователь взаимодействует с элементом, например,
+                            когда удерживает кнопку мыши на элементе. Часто используется для создания эффекта «нажатия»
+                            на кнопку или ссылку. :active может не сильно отличаться по цвету, так как пользователь
+                            знает, с каким элементом взаимодействует.</p>
+                        <a class="active__link" href="#comeback">вернуться</a>
+                        <div class="active__btn-box">
+                            <button class="active__button item-1">active 1</button>
+                            <button class="active__button item-2">active 2</button>
+                            <button class="active__button item-3">active 3</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="homework-1" id="homework-1">
+                <div class="homework-1__container container">
+                    <div class="homework-1__item">
+                        <div class="homework-1__number">1</div>
+                        <div class="homework-1__box">
+                            <div class="homework-1__lable">Jan 2023</div>
+                            <h2 class="homework-1__title icon-sirch">Research & discovery</h2>
+                            <div class="homework-1__text">Et arcu aliquam viverra felis rhoncus vitae arcu eget urna
+                                viverra massa nullaolmerolil fermentum congue ultrices.</div>
+                        </div>
+                    </div>
+                    <div class="homework-1__item">
+                        <div class="homework-1__number">2</div>
+                        <div class="homework-1__box">
+                            <div class="homework-1__lable">Feb 2023</div>
+                            <h2 class="homework-1__title icon-laptop">Product development</h2>
+                            <div class="homework-1__text">Libero sed nibh dictumst viverra tincidunt nulla risusolm
+                                neque lorem sed elementum adipiscing purus massa.</div>
+                        </div>
+                    </div>
+                    <div class="homework-1__item">
+                        <div class="homework-1__number">3</div>
+                        <div class="homework-1__box">
+                            <div class="homework-1__lable">Apr 2023</div>
+                            <h2 class="homework-1__title icon-rokcet">Product launch</h2>
+                            <div class="homework-1__text">In diam aenean nunc amet faucibus commodo mattisole tincidunt
+                                euismod quis gravida tellus eros venenatis.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="homework-2 pricing">
+                <div class="pricing__body container">
+                    <div class="pricing__top">
+                        <div class="pricing__lable">Basic</div>
+                        <div class="pricing__price">$99</div>
+                        <div class="pricing__text">Billed monthly</div>
+                    </div>
+                    <ul class="pricing__list">
+                        <li class="pricing__item">All analytics features</li>
+                        <li class="pricing__item">Up to 250,000 tracked visits</li>
+                        <li class="pricing__item">Normal support</li>
+                        <li class="pricing__item">Up to 3 team members</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="homework-3 portfolio">
+                <div class="container">
+                    <div class="portfolio__images">
+                        <img src="img/girls.png"
+                            alt="two girls are having fun, they have laptops and notepads on the table">
+                    </div>
+                    <div class="portfolio__info">
+                        <div class="portfolio__top top">
+                            <div class="top__subtitle">Agency provides a full service range including technical
+                                skills, design, business
+                                understanding.</div>
+                            <div class="top__text">Outsource your digital marketing efforts, instead of handling
+                                in-house. They can provide your
+                                business with a variety of digital solutions to promote your product or service online
+                                and
+                                help you.</div>
+                        </div>
+                        <div class="portfolio__promote promote">
+                            <h3>Promote your product</h3>
+                            <p> Ability to put themselves in the merchant's shoes. It is meant to
+                                partner on the long
+                                run,
+                                and work as an extension of the merchant's team.
+                            </p>
+                            <ul>
+                                <li>Digital marketing</li>
+                                <li>Efforts instead</li>
+                                <li>Handling in-house</li>
+                            </ul>
+                            <p> A digital agency is a business you hire to outsource your digital
+                                marketing efforts,
+                                instead
+                                of handling in-house. They can provide your business with a variety of digital solutions
+                                to
+                                promote your product or service online and help you.
+                            </p>
+                        </div>
+                        <div class="portfolio__promote promote">
+                            <h3>Promote your product</h3>
+                            <p> Ability to put themselves in the merchant's shoes. It is meant to
+                                partner on the long
+                                run,
+                                and work as an extension of the merchant's team.
+                            </p>
+                            <ol>
+                                <li>Digital marketing</li>
+                                <li>Efforts instead</li>
+                                <li>Handling in-house</li>
+                            </ol>
+                            <p> A digital agency is a business you hire to outsource your digital
+                                marketing efforts,
+                                instead
+                                of handling in-house. They can provide your business with a variety of digital solutions
+                                to
+                                promote your product or service online and help you.
+                            </p>
+                        </div>
+                        <div class="portfolio__lable lable">
+                            <div class="lable__text">
+                                Provide your business with a variety of digital solutions to
+                                promote your product or
+                                service online and help you.
+                            </div>
+                        </div>
+                        <p>Outsource your digital marketing efforts, instead of handling in-house. They can provide
+                            your business with a variety of digital solutions to promote your product or service
+                            online and help you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="container">
+                    <div class="game-box">
+                        <h2 class="game__title">Road of life</h2>
+                        <div class="game__road-1">start</div>
+                        <div class="game__road-2 style"></div>
+                        <div class="game__road-3 style"></div>
+                        <div class="game__road-4 style"></div>
+                        <div class="game__road-5 style"></div>
+                        <div class="game__road-6 style"></div>
+                        <div class="game__road-7 style"></div>
+                        <div class="game__road-8 style"></div>
+                        <div class="game__road-9 style"></div>
+                        <div class="game__road-10 style"></div>
+                        <div class="game__road-11 style"></div>
+                        <div class="game__road-12 style"></div>
+                        <div class="game__road-13 style"></div>
+                        <div class="game__road-14 style">finish</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    </div>
+</body>
+
+</html>
