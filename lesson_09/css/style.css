@@ -36,3 +36,19 @@ wrapper {
     color: #8a2be2;
     text-shadow: 4px -1px 10px #8a2be2;
 }
+
+
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: grey;
+}
+
+.footer__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(225, 94, 94);
+    text-shadow: 4px -1px 10px #8a2be2;
+}
